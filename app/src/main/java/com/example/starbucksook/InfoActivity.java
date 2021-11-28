@@ -34,7 +34,7 @@ public class InfoActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InfoActivity.this, MenuActivity.class);
+                Intent intent = new Intent(InfoActivity.this, Step1Activity.class);
 
                 startActivity(intent);
 
