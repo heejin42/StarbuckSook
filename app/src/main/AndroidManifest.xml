@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".Step1Activity"></activity>
     </application>
 
 </manifest>
