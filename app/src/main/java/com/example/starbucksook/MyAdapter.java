@@ -39,16 +39,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.textView2.setText(data2[position]);
         holder.imageView.setImageResource(images[position]);
 
-//        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(context, Main2Activity.class);
-//                i.putExtra("title",data1[position]);
-//                i.putExtra("description",data2[position]);
-//                i.putExtra("images",images[position]);
-//                context.startActivity(i);
-//            }
-//        });
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, InfoActivity.class);
+                i.putExtra("title",data1[position]);
+                i.putExtra("description",data2[position]);
+                i.putExtra("images",images[position]);
+                context.startActivity(i);
+            }
+        });
 
     }
 
